@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % In English:
-%  This is a LaTeX class for São Paulo Research Foudation (FAPESP)
+%  This is a LaTeX class for São Paulo Research Foundation (FAPESP)
 %  Project.
 %  For information about FAPESP, visit the site 
 %  http://www.fapesp.br/en
