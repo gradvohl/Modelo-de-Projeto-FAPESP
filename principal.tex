@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% In English:
+%  This is a LaTeX template for São Paulo Research Foudation (FAPESP)
+%  Project.
+%  For information about FAPESP, visit the site 
+%  http://www.fapesp.br/en
+%
+%  Disclaimer:
+%     Although the author of this template has projects funded by 
+%     FAPESP throughout his career, the research agency did not 
+%     support the  construction of this code, nor it recognizes as an 
+%     official template.  This template is just assistance in text 
+%     formatting of projects for submission to a funding agency. 
+%     Feel free to use it at your own risk.
+%
+%  This template targets mainly on projects written in Portuguese.
+%
+% In Portuguese:
+%  Este é um modelo LaTeX para o projeto da Fundação de Ampario à 
+%  Pesquisa do Estado de São Paulo (FAPESP).
+%  Para mais informações sobre a FAPESP, visite o site 
+%  http://www.fapesp.br/en
+%
+%  Aviso Legal:
+%     Embora o autor deste modelo tenha projetos financiados pela  
+%     FAPESP ao longo de sua carreira, a agência de pesquisa não   
+%     apoiou a construção desse modelo, nem o reconhece como modelo
+%     oficial. Este modelo é apenas uma ajuda na formatação de  
+%     texto de projetos para envio a uma agência de financiamento. 
+%     Sinta-se livre para usá-lo por sua conta e risco.
+%
+%  Este modelo tem como alvo principalmente projetos escritos em 
+%  português.
+%
+% Author/Autor: André Leon Sampaio Gradvohl, Dr.
+% Email:        gradvohl@ft.unicamp.br
+% Lattes CV:    http://lattes.cnpq.br/9343261628675642
+% ORCID:        https://orcid.org/0000-0002-6520-9740
+% FAPESP:       https://bv.fapesp.br/en/pesquisador/102636
+% 
+% Last update/Última versão: 27/Oct/2019
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Escolha: Portugues ou Ingles.
+\documentclass[Portugues]{projetoFAPESP}
+%\documentclass[Ingles]{projetoFAPESP}
+%
+%% Adicione o arquivo com as referências bibliográficas
+\addbibresource{bibliografia.bib}
+%
+%% Página de título
+%% Observação: As definições que aparecem a seguir comporão a
+%%             página de título e a folha de rosto.
+%% Define o nome da universidade onde o projeto será desenvolvido.
+\universidade{Universidade Estadual de Campinas}
+%
+%% Define o nome da faculdade onde o projeto será desenvolvido.
+\faculdade{Faculdade de Tecnologia}
+%
+%% Define o título do projeto.
+\titulo{Análise multidimensional de sistemas para processamento online de fluxos de dados}
+%
+%% Define o título do projeto em inglês.
+\tituloIngles{Multidimensional Analysis of Systems for Online Datastream Processing}
+%
+%% Define a agencia de Fomento e a abreviatura. O primeiro argumento é o 
+%% nome por extenso e o segundo a abreviatura.
+%% Se não houver abreviatura, deixe o segundo argumento vazio.
+\agFomento{Fundação de Amparo à Pesquisa do Estado de São Paulo}{FAPESP}
+%
+%% Define a modalidade de projeto. 
+%% Pode ser temático, regular, iniciação cientifica, mestrado, doutorado etc.
+\modalidadeProjeto{Auxílio à Pesquisa Regular}
+%
+%% Define o autor do projeto e seu título (e.g. Dr.).
+\autor{André Leon Sampaio Gradvohl}{Dr.}
+%
+%% Define o nome do beneficiário, se for o caso de bolsa. Esse comando é opcional.
+% \beneficiario{Nome do Beneficiário}
+%
+%% Define a equipe executora do projeto.
+%% O primeiro argumento é o nome e o segundo argumento é o título do membro (e.g. Dr.}
+%% São, no máximo, 5 membros no grupo.
+% \membroA{Maria da Silva}{Ph.D.}
+% \membroB{Francisco José}{M.Sc.}
+% \membroC{Joao dos Santos}{Bel.}
+% \membroD{Xico}{Esp.}
+% \membroE{Antonio}{M.D.}
+% \membroF{José}{Tec.}
+%
+%% Define o período da vigência do Projeto.
+%% Os parâmetros são dia, mês e ano. Use apenas números.
+\inicioPeriodoVigencia{1}{6}{2015}
+\fimPeriodoVigencia{30}{5}{2017}
+%
+%% Define a cidade onde o projeto será desenvolvido.
+\cidade{Limeira}
+%
+%% Página de título
+%% Observação: Os comandos a seguir não devem ser mudados em nenhuma situação.
+\begin{document}
+%
+%% Define a numeração em romanos.
+\pagenumbering{roman}
+%
+%% Gera a folha de título.
+\geraTitulo
+%
+%% Gera a folha de rosto.
+\folhaDeRosto
+%
+%% Gera a folha de rosto em inglês. 
+\folhaDeRostoIngles
+%
+%% Escreva aqui o resumo do projeto em Português.
+\begin{resumo}
+  Aqui ficará o resumo em português. Sugere-se o máximo de 500 palavras.
+ 
+  %% As palavras-chaves são opcionais, mas devem estar dentro do ambiente resumo.
+  \palavraschaves{Fluxos de dados, processamento \textit{online}, \textit{benchmark}}
+\end{resumo}
+
+%
+%% Escreva aqui o resumo do projeto em Inglês.
+\begin{abstract}
+  Here we will have the abstract in english. We suggest the maximum of 500 words.
+  
+  %% As palavras-chaves são opcionais, mas devem estar dentro do ambiente resumo.
+  \keywords{Data Streams, Online Processing, Benchmark}
+\end{abstract}
+%\keywords{A, B, C}
+%
+%% Adicionará o sumário.
+%% Mantenha os comandos \thispagestyle{empty} e \clearpage
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+%
+%% Define a numeração em arábicos.
+\pagenumbering{arabic}
+%
+%% Corpo do texto. 
+%% Para melhor organização do texto, coloque cada capítulo em um arquivo separado.
+%
+%% Capítulo com o enunciado do problema.
+\input{enunciado.tex}
+%
+%% Capítulo com os resultados esperados do projeto.
+\input{resultadosEsperados.tex}
+%
+%% Capítulo com os Desafios científicos e tecnológicos e os meios e métodos para superá-los.
+\input{desafios.tex}
+%
+%% Capítulo com o Cronograma.
+\input{cronograma.tex}
+%
+%% Capítulo com Disseminação e avaliação.
+\input{disseminacao.tex}
+%
+%% Capítulo com Outros apoios.
+\input{outrosapoios.tex}
+%
+%% Referências bibliográficas
+\printbibliography[heading=bibintoc, % Adiciona no sumário
+                   title={Referências bibliográficas} % Nome do Capítulo
+                  ]
+%% Fim do documento
+\end{document}
