@@ -19,7 +19,7 @@
 %  Este é um modelo LaTeX para o projeto da Fundação de Amparo à 
 %  Pesquisa do Estado de São Paulo (FAPESP).
 %  Para mais informações sobre a FAPESP, visite o site 
-%  http://www.fapesp.br/en
+%  http://www.fapesp.br
 %
 %  Aviso Legal:
 %     Embora o autor desta classe tenha projetos financiados pela  
